@@ -8,7 +8,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async(inputs) => {
-    const res = await axios.post("https://social-media-app-server-phi.vercel.app/auth/login",inputs,{
+    const res = await axios.post("https://social-media-app-server-phi.vercel.app/api/auth/login",inputs,{
       withCredentials: true,
     });
     setCurrentUser(res.data);
