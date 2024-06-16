@@ -16,7 +16,7 @@ app.use((req,res,next)=>{
 });
 app.use(express.json());
 app.use(cors({
-    origin: "http://connect-taupe-seven.vercel.app",
+    origin: "https://connect-taupe-seven.vercel.app/login",
     credentials: true,
     methods: ["POST","GET","DELETE","PUT"]
 }));
