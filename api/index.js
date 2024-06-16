@@ -10,17 +10,16 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import multer from "multer";
 
-app.use((req,res,next)=>{
-    res.header("Access-Control-Allow-Credentials",true);
-    next();
-});
+// app.use((req,res,next)=>{
+//     res.header("Access-Control-Allow-Credentials",true);
+//     next();
+// });
 app.use(express.json());
 app.use(cors());
 app.use(cors({
     origin: "https://connect-taupe-seven.vercel.app",
-    credentials: true,
     methods: ["POST","GET","DELETE","PUT"],
-    allowedHeaders: ["Content-Type", "Authorization"]
+    credentials: true,
 }));
 app.use(cookieParser());
 const storage = multer.diskStorage({
