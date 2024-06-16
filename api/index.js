@@ -15,6 +15,7 @@ app.use((req,res,next)=>{
     next();
 });
 app.use(express.json());
+app.use(cors());
 app.use(cors({
     origin: "https://connect-taupe-seven.vercel.app",
     credentials: true,
