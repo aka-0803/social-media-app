@@ -19,7 +19,8 @@ app.use(cors());
 app.use(cors({
     origin: "https://connect-taupe-seven.vercel.app",
     credentials: true,
-    methods: ["POST","GET","DELETE","PUT"]
+    methods: ["POST","GET","DELETE","PUT"],
+    allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use(cookieParser());
 const storage = multer.diskStorage({
