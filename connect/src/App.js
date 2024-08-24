@@ -25,7 +25,6 @@ function App() {
   const { currentUser } = useContext(AuthContext);
   const { darkMode } = useContext(DarkModeContext);
   const queryClient = new QueryClient();
-  axios.defaults.withCredentials = true;
   const Layout = () => {
     return (
       <QueryClientProvider client={queryClient}>
