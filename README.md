@@ -4,7 +4,7 @@
 **Connect** is a social media application designed to enable users to create profiles, share posts, interact with others through comments and likes, and explore content created by other users. It features a responsive design, robust authentication, and a user-friendly interface, making it accessible on both desktop and mobile devices.
 
 ## Project Flowchart
-![Project Flowchart](path-to-your-flowchart-image.png)
+![Project Flowchart](connect/public/flowchart.png)
 
 ## Features
 - **User Authentication**: Secure sign-up and login using JWT.
